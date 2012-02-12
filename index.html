@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery.cover</title>
+<link href='styles.css' rel='stylesheet'>
+</head>
+<body>
+
+<div id='content'>
+  <h1>jQuery.cover</h1>
+  <p>This plugin enables <a href='http://about.me/jasonzhao6'>about.me</a> style fullscreen background for your users.</p>
+  <p>It loads image info from HTML, so your CSS asset can be left static.</p>
+  <p>It is &lt; than <small>1000 bytes</small>, and it works in Chrome, Firefox, Safari, and IE7-9.</p>
+  <p>You can download this demo in <a href='jquery.cover.zip'>a zip file</a> or <a href='https://github.com/jasonzhao6/jquery.cover.js'>fork it on GitHub</a>.</p>
+  <div class='html column'>
+    <h4>HTML</h4>
+
+<textarea>
+<img id='background' src='sf.jpg' data-image-width='2560' data-image-height='1600' data-horizontal-align='[left|center|right]' data-vertical-align='[top|center|bottom]' />
+</textarea>
+
+  </div>
+  <div class='css column'>
+    <h4>CSS</h4>
+
+<textarea>
+html {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#background {
+  display: none;
+  position: fixed;
+  z-index: -1;
+}
+</textarea>
+
+  </div>
+  <div class='js column'>
+    <h4>JavaScript</h4>
+
+<textarea>
+<!-- import jquery -->
+<!-- import jquery.cover -->
+<script type='text/javascript'>
+$(function() {
+  $('#background').cover();
+});
+</script>
+</textarea>
+
+  </div>
+</div>
+
+<div id="bg-copyright">
+  <a href='http://www.flickr.com/photos/changfamily168/'>Background Image &copy; Liping Photography</a>
+</div>
+
+<img id='background' src='sf.jpg' data-image-width='2560' data-image-height='1600' data-horizontal-align='center' data-vertical-align='bottom' />
+
+<script src='jquery-1.7.1.min.js'></script>
+<script src='jquery.cover.js'></script>
+<script type='text/javascript' charset='utf-8'>
+$(function() {
+  $('#background').cover();
+  $('textarea').click(function() {
+    $(this).select();
+  });
+});
+</script>

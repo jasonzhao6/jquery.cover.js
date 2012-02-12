@@ -1,0 +1,3 @@
+This jQuery plugin enables about.me style fullscreen background for your users.
+It loads image info from HTML, so your CSS asset can be left static.
+It is < than 1000 bytes, and it works in Chrome, Firefox, Safari, and IE7-9.
