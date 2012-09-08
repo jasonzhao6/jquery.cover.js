@@ -1,3 +1,38 @@
-This jQuery plugin enables about.me style fullscreen background for your users.
-It loads image info from HTML, so your CSS asset can be left static.
-It is < than 1000 bytes, and it works in Chrome, Firefox, Safari, and IE7-9.
+# jQuery.cover.js
+This plugin creates full page, resizable backgrounds.
+
+It has been tested in IE7-9 and weighs less than a kilobyte.
+
+You can download it in a zip file or view source on GitHub.
+
+## Usage
+HTML
+```html
+<img id='background' src='sf.jpg' data-image-width='2560' data-image-height='1600' data-horizontal-align='[left|center|right]' data-vertical-align='[top|center|bottom]' />
+```
+CSS
+```css
+html {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#background {
+  display: none;
+  position: fixed;
+  z-index: -1;
+}
+```
+JavaScript
+```html
+<!-- import jQuery -->
+<!-- import jQuery.cover -->
+<script type='text/javascript'>
+$(function() {
+  $('#background').cover();
+});
+</script>
+```

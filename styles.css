@@ -8,15 +8,14 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+body {
+  color: #222;
+  font-family: "Helvetica Neue", Helvetica, Arial, default;
+}
 #background {
   display: none;
   position: fixed;
   z-index: -1;
-}
-
-body {
-  color: #222;
-  font-family: "Helvetica Neue", Helvetica, Arial, default;
 }
 #content {
   background: #EFEFEF;
@@ -27,7 +26,7 @@ body {
   -moz-box-shadow: 0px 0px 8px #333;
   box-shadow: 0px 0px 8px #333;
   padding: 20px 30px 30px;
-  margin: 100px auto;
+  margin: 120px auto 0;
   text-align: justify;
   width: 700px;
 }
@@ -41,17 +40,14 @@ p {
 a, a:hover, a:active, a:visited {
   color: #204C61;
 }
-.dim {
-  background: #ccc;
-}
 h4 {
   padding-bottom: 6px;
 }
 .column {
   display: inline-block;
   margin-top: 10px;
-	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
-	*display: inline;
+  zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+  *display: inline;
 }
 .html, .css {
   padding-right: 2%;

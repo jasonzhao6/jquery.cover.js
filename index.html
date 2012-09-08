@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>jQuery.cover</title>
+<title>jQuery.cover.js</title>
 <link href='styles.css' rel='stylesheet'>
 </head>
 <body>
 
 <div id='content'>
-  <h1>jQuery.cover</h1>
-  <p>This plugin enables <a href='http://about.me/jasonzhao6'>about.me</a> style fullscreen background for your users.</p>
-  <p>It loads image info from HTML, so your CSS asset can be left static.</p>
-  <p>It is &lt; than <small>1000 bytes</small>, and it works in Chrome, Firefox, Safari, and IE7-9.</p>
-  <p>You can download this demo in <a href='jquery.cover.zip'>a zip file</a> or <a href='https://github.com/jasonzhao6/jquery.cover.js'>fork it on GitHub</a>.</p>
+  <h1>jQuery.cover.js</h1>
+  <p>This plugin creates a full page, resizable background.</p>
+  <p>It has been tested in IE7-9 and weighs less than a kilobyte.</p>
+  <p>You can download it in <a href='jquery.cover.zip'>a zip file</a> or <a href='https://github.com/jasonzhao6/jquery.cover.js'>view source</a> on GitHub.</p>
   <div class='html column'>
     <h4>HTML</h4>
 
@@ -44,8 +43,8 @@ html {
     <h4>JavaScript</h4>
 
 <textarea>
-<!-- import jquery -->
-<!-- import jquery.cover -->
+<!-- import jQuery -->
+<!-- import jQuery.cover -->
 <script type='text/javascript'>
 $(function() {
   $('#background').cover();
@@ -63,7 +62,7 @@ $(function() {
 <img id='background' src='sf.jpg' data-image-width='2560' data-image-height='1600' data-horizontal-align='center' data-vertical-align='bottom' />
 
 <script src='jquery-1.7.1.min.js'></script>
-<script src='jquery.cover.js'></script>
+<script src='jquery.cover.min.js'></script>
 <script type='text/javascript' charset='utf-8'>
 $(function() {
   $('#background').cover();
