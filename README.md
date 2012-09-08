@@ -1,5 +1,5 @@
 # jQuery.cover.js
-This plugin creates full page, resizable backgrounds.
+This plugin creates a full page, resizable background.
 
 It has been tested in IE7-9 and weighs less than a kilobyte.
 
